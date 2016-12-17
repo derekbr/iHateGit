@@ -1,0 +1,12 @@
+<h2>All the Users</h2>
+<a href="users/new">Add User</a>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Password</th>
+  </tr>
+  <% data.forEach(function(user){ %>
+    <%- include _user %>
+  <% }); %>
+</table>
